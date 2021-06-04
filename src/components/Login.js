@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-const Login = (props) => {
-  return (
+const Login = () => (
   <Container>
     <Content>
       <CTA>
@@ -16,8 +15,7 @@ const Login = (props) => {
       <BgImage/>
     </Content>
   </Container>
-  )
-};
+);
 
 const Container = styled.section`
   overflow: hidden;
