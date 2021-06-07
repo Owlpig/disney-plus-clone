@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
+import NewDisney from './NewDisney';
+import Originals from './Originals';
+import Recommends from './Recommends';
+import Trending from './Trending';
+import Viewers from './Viewers';
 
 const Home = () => (
   <Container>
     <ImgSlider/>
+    <Viewers/>
+    <Recommends/>
+    <NewDisney/>
+    <Originals/>
+    <Trending/>
   </Container>
 );
 
