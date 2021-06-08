@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-disney-clone-c999a-firebase-adminsdk-7uoet-4bc8546ba7.json
+firebase-adminsdk.json
+/backup
