@@ -1,3 +1,14 @@
+import {
+  loginContainer as Container,
+  loginContent as Content,
+  BgImage,
+  CTA,
+  CTALogoOne,
+  CTALogoTwo,
+  SignUp,
+  loginDescription as Description,
+} from '../styles';
+
 const Login = () => (
   <Container>
     <Content>

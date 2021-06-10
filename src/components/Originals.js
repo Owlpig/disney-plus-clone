@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectOriginal } from '../features/movie/movieSlice';
+import { moviesContainer as Container, moviesContent as Content, moviesWrap as Wrap } from '../styles';
 
 const Originals = () => {
   const movies = useSelector(selectOriginal);

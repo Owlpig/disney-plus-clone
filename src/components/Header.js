@@ -5,6 +5,9 @@ import { auth, provider } from '../firebase';
 import {
   selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails,
 } from '../features/user/userSlice';
+import {
+  Nav, Logo, NavMenu, Login, UserImg, DropDown, SignOut,
+} from '../styles';
 
 const Header = () => {
   const dispatch = useDispatch();

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
 
-const phone = `@media (max-width: 768px)`
-const offWhite = `rgb(249, 249, 249)`
-const offWhiteLight = `rgba(249, 249, 249, 0.1)`
-const offWhiteDark = `rgba(249, 249, 249, 0.8)`
-const boxShadowDefault = `rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px`
-const boxShadowHover = `rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px`
-const offBlack = `rgb(19, 19, 19)`
+const phone = '@media (max-width: 768px)';
+const offWhite = 'rgb(249, 249, 249)';
+const offWhiteLight = 'rgba(249, 249, 249, 0.1)';
+const offWhiteDark = 'rgba(249, 249, 249, 0.8)';
+const boxShadowDefault = 'rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px';
+const boxShadowHover = 'rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px';
+const offBlack = 'rgb(19, 19, 19)';
 
 // Viewers styles
 const viewersContainer = styled.div`
@@ -83,9 +83,9 @@ const moviesContent = styled.div`
   }
 `;
 
-const moviesWrap = styled(viewersWrap)
+const moviesWrap = styled(viewersWrap)``;
 
-//Login styles
+// Login styles
 const loginContainer = styled.section`
   overflow: hidden;
   display: flex;
@@ -179,7 +179,7 @@ const CTALogoTwo = styled.img`
   width: 100%;
 `;
 
-//ImgSlider styles
+// ImgSlider styles
 const Carousel = styled(Slider)`
   margin-top: 20px;
 
@@ -245,7 +245,7 @@ const sliderWrap = styled.div`
   }
 `;
 
-//Home styles
+// Home styles
 const homeContainer = styled.main`
   position: relative;
   min-height: calc(100vh - 250px);
@@ -264,7 +264,7 @@ const homeContainer = styled.main`
   }
 `;
 
-//Header styles
+// Header styles
 const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -417,8 +417,12 @@ const SignOut = styled.div`
   }
 `;
 
-//Details styles
-const detailsContainer = styled(homeContainer);
+// Details styles
+const detailsContainer = styled(homeContainer)`
+  &:after {
+    background: none;
+  }
+`;
 
 const Background = styled.div`
   left: 0px;
@@ -588,7 +592,7 @@ const Description = styled.div`
   }
 `;
 
-export default {
+export {
   viewersContainer,
   viewersWrap,
   moviesContainer,
@@ -607,5 +611,20 @@ export default {
   homeContainer,
   Nav,
   Logo,
-  
-}
+  NavMenu,
+  Login,
+  SignOut,
+  detailsContainer,
+  Background,
+  ImageTitle,
+  ContentMeta,
+  Controls,
+  Player,
+  Trailer,
+  AddList,
+  GroupWatch,
+  SubTitle,
+  Description,
+  DropDown,
+  UserImg,
+};

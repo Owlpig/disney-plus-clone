@@ -1,6 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import db from '../firebase';
+import {
+  detailsContainer as Container,
+  Background,
+  ImageTitle,
+  ContentMeta,
+  Controls,
+  Player,
+  Trailer,
+  AddList,
+  GroupWatch,
+  SubTitle,
+  Description,
+} from '../styles';
 
 const Details = () => {
   const { id } = useParams();
@@ -12,10 +25,14 @@ const Details = () => {
         if (doc.exists) {
           setDetailData(doc.data());
         } else {
+          // eslint-disable-next-line
           console.log('no such document found in firebase');
         }
       })
-      .catch(error => console.error('Error getting document:', error.message));
+      .catch(error => {
+        // eslint-disable-next-line
+        console.error('Error getting document:', error.message);
+      });
   }, [id]);
 
   return (

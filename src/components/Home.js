@@ -9,6 +9,7 @@ import Viewers from './Viewers';
 import db from '../firebase';
 import { setMovies } from '../features/movie/movieSlice';
 import { selectUserName } from '../features/user/userSlice';
+import { homeContainer as Container } from '../styles';
 
 const Home = () => {
   const dispatch = useDispatch();

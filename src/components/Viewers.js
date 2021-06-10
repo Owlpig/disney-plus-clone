@@ -1,3 +1,5 @@
+import { viewersContainer as Container, viewersWrap as Wrap } from '../styles';
+
 const Viewers = () => (
     <Container>
       <Wrap>
